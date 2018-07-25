@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "jsx-a11y/label-has-for": [
+    2,
+    {
+      "components": [ "Label" ],
+      "required": {
+      "some": [ "nesting", "id" ]
+      }
+    }
+  ],
+  "react/jsx-filename-extension": [
+    1,
+    {
+      "extensions": [".js", ".jsx"]
+    }
+    ],
+    "react/jsx-one-expression-per-line": [
+    0,
+    {
+      "extensions": [".js", ".jsx"]
+    }
+    ],
+    "prettier/prettier": "error"
+  }
+}
